@@ -1,24 +1,25 @@
 # Meilleur du Meilleur
 
-Meilleur du Meilleur is a French product comparison website that ranks products
-from aggregated Reddit user feedback.
+Meilleur du Meilleur est un comparateur de produits français basé sur les avis
+Reddit agrégés.
 
-The site turns real user discussions into clear product rankings, consensus
-scores, strengths, weaknesses, and buying guidance for shoppers in France.
+Le site transforme les discussions publiques d'utilisateurs en classements
+clairs, notes de consensus, points forts, points faibles et guides d'achat pour
+les consommateurs en France.
 
-## Links
+## Liens
 
-- Website: https://meilleurdumeilleur.fr/
-- Methodology: https://meilleurdumeilleur.fr/methodologie/
-- Privacy: https://meilleurdumeilleur.fr/confidentialite-extension/
+- Site officiel: https://meilleurdumeilleur.fr/
+- Méthodologie: https://meilleurdumeilleur.fr/methodologie/
+- Confidentialité: https://meilleurdumeilleur.fr/confidentialite-extension/
 - Contact: bonjour@meilleurdumeilleur.fr
 
-## Keywords
+## Mots-clés
 
 Meilleur du Meilleur, comparateur de produits, avis Reddit, meilleur produit,
-classement produits, guide d'achat, consensus Reddit, product comparison,
-Reddit reviews, product rankings, shopping assistant.
+classement produits, guide d'achat, consensus Reddit, avis utilisateurs,
+shopping, aide à l'achat.
 
-## Author
+## Auteur
 
-Created by Lucas Sampé.
+Créé par Sampé.
