@@ -20,6 +20,7 @@
       --line: #ece0d6;
       --bg: #fdf9f5;
       --card: #ffffff;
+      --w: 90rem;
     }
 
     * {
@@ -39,18 +40,17 @@
     }
 
     .site-header .wrap {
-      width: min(52rem, calc(100% - 2.4rem));
+      width: min(var(--w), calc(100% - 2.4rem));
       margin: 0 auto;
-      padding: 0.9rem 0;
+      padding: 1.55rem 0;
       display: flex;
       align-items: center;
-      gap: 0.7rem;
-      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .logo-mark {
-      width: 40px;
-      height: 40px;
+      width: 58px;
+      height: 58px;
       flex: none;
       display: block;
     }
@@ -58,30 +58,27 @@
     .brand-title {
       margin: 0;
       color: #fff;
-      font-size: 1.3rem;
+      font-size: clamp(1.55rem, 3vw, 2.35rem);
       line-height: 1.2;
       font-weight: 700;
       letter-spacing: 0.2px;
     }
 
-    .brand-subtitle {
-      width: 100%;
-      margin: -0.25rem 0 0 3rem;
-      color: #ffe6dc;
-      font-size: 0.95rem;
+    main {
+      width: min(var(--w), calc(100% - 2.4rem));
+      margin: 0 auto;
+      padding: 0;
     }
 
-    main {
-      width: min(52rem, calc(100% - 2.4rem));
-      margin: 0 auto;
-      padding: 2rem 0;
+    .hero-home {
+      padding: 6.4rem 0 2.2rem;
     }
 
     h1 {
-      margin: 0 0 0.5em;
+      margin: 0 0 0.52em;
       color: var(--ink);
-      font-size: clamp(2.1rem, 7vw, 3.6rem);
-      line-height: 1.05;
+      font-size: clamp(2.7rem, 5.4vw, 4.7rem);
+      line-height: 1.1;
       letter-spacing: 0;
     }
 
@@ -94,22 +91,21 @@
     }
 
     p {
-      max-width: 680px;
+      max-width: 70rem;
       margin: 0 0 0.9em;
       color: var(--muted);
     }
 
     .lead {
-      max-width: 40rem;
+      max-width: 78rem;
       color: var(--muted);
-      font-size: 1.18rem;
+      font-size: clamp(1.45rem, 2.45vw, 2rem);
+      line-height: 1.62;
     }
 
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin: 1.4rem 0 0;
+    .lead-update {
+      margin-top: 1.4rem;
+      font-size: clamp(1.05rem, 1.7vw, 1.45rem);
     }
 
     a {
@@ -121,54 +117,32 @@
       color: #1a5fb4;
     }
 
-    .button {
+    .brand-link {
       display: inline-flex;
-      min-height: 44px;
       align-items: center;
-      justify-content: center;
-      border: 1px solid var(--accent);
-      border-radius: 8px;
-      padding: 0.55rem 1rem;
-      background: var(--accent);
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .button:hover {
-      background: var(--accent-dark);
+      gap: 1rem;
       color: #fff;
     }
 
-    .button.secondary {
-      background: transparent;
+    .brand-link:active,
+    .brand-link:hover {
+      color: #fff;
+    }
+
+    .reddit-word {
       color: var(--accent);
-      border-width: 1.5px;
+      font-weight: 700;
     }
 
-    .button.secondary:hover {
-      background: var(--accent);
-      color: #fff;
+    .reddit-ico {
+      width: 0.82em;
+      height: 0.82em;
+      margin: 0 0.12em;
+      vertical-align: -0.08em;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.1rem;
-      margin-top: 1rem;
-    }
-
-    .item {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 1rem;
-    }
-
-    .item strong {
-      display: block;
-      margin-bottom: 0.35rem;
-      color: var(--ink);
+    .nowrap {
+      white-space: nowrap;
     }
 
     .link-list a {
@@ -180,7 +154,7 @@
     }
 
     footer {
-      margin-top: 2.4rem;
+      margin-top: 3.2rem;
       padding-top: 1rem;
       border-top: 1px solid var(--line);
       color: var(--muted);
@@ -189,20 +163,22 @@
 
     @media (max-width: 720px) {
       .site-header .wrap {
-        width: min(100% - 1.8rem, 52rem);
-      }
-
-      .brand-subtitle {
-        margin-left: 0;
+        width: min(100% - 1.8rem, var(--w));
+        padding: 1rem 0;
+        gap: 0.7rem;
       }
 
       main {
-        width: min(100% - 1.8rem, 52rem);
-        padding: 1.4rem 0;
+        width: min(100% - 1.8rem, var(--w));
       }
 
-      .grid {
-        grid-template-columns: 1fr;
+      .logo-mark {
+        width: 42px;
+        height: 42px;
+      }
+
+      .hero-home {
+        padding: 3rem 0 1.2rem;
       }
     }
   </style>
@@ -210,38 +186,21 @@
 <body>
   <header class="site-header">
     <div class="wrap">
-      <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="Logo Meilleur du Meilleur">
-        <rect width="40" height="40" rx="11" fill="#fff"/>
-        <path d="M20 8 L31 21 L24 21 L24 31 L16 31 L16 21 L9 21 Z" fill="#ff4500" stroke="#ff4500" stroke-width="2.4" stroke-linejoin="round"/>
-      </svg>
-      <p class="brand-title">Meilleur du Meilleur</p>
-      <p class="brand-subtitle">le meilleur produit d'après les avis Reddit</p>
+      <a class="brand-link" href="https://meilleurdumeilleur.fr/" aria-label="Meilleur du Meilleur">
+        <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="Logo Meilleur du Meilleur">
+          <rect width="40" height="40" rx="11" fill="#fff"/>
+          <path d="M20 8 L31 21 L24 21 L24 31 L16 31 L16 21 L9 21 Z" fill="#ff4500" stroke="#ff4500" stroke-width="2.4" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-title">Meilleur du Meilleur</span>
+      </a>
     </div>
   </header>
   <main>
-    <h1>Meilleur du Meilleur</h1>
-    <p class="lead">Le comparateur de produits basé sur les avis Reddit.</p>
-    <p>Meilleur du Meilleur analyse les discussions publiques d'utilisateurs Reddit pour produire des classements, des notes de consensus et des guides d'achat clairs pour les consommateurs français.</p>
-    <div class="actions">
-      <a class="button" href="https://meilleurdumeilleur.fr/">Visiter le site</a>
-      <a class="button secondary" href="https://meilleurdumeilleur.fr/methodologie/">Voir la méthodologie</a>
-    </div>
-
-    <h2>Ce que le site apporte</h2>
-    <div class="grid" aria-label="Points forts">
-      <div class="item">
-        <strong>Classements produits</strong>
-        <p>Des catégories classées selon le consensus des retours utilisateurs, pas selon le marketing des marques.</p>
-      </div>
-      <div class="item">
-        <strong>Avis Reddit agrégés</strong>
-        <p>Les tendances récurrentes sont synthétisées en points forts, points faibles et FAQ utiles.</p>
-      </div>
-      <div class="item">
-        <strong>Guides d'achat français</strong>
-        <p>Les recommandations privilégient les modèles réellement disponibles pour les acheteurs en France.</p>
-      </div>
-    </div>
+    <section class="hero-home">
+      <h1>Le meilleur du meilleur, <span class="nowrap">selon <span class="reddit-word">Reddit</span> <svg class="reddit-ico" viewBox="0 0 20 20" role="img" aria-label="Reddit"><circle cx="10" cy="10" r="10" fill="#FF4500"/><path fill="#fff" d="M16.7 10c0-.8-.65-1.45-1.45-1.45-.4 0-.75.16-1.01.41-1-.72-2.37-1.18-3.9-1.24l.66-3.12 2.17.46a1.04 1.04 0 1 0 .12-.62l-2.42-.51a.31.31 0 0 0-.37.24l-.74 3.48c-1.55.05-2.95.51-3.96 1.24a1.45 1.45 0 1 0-1.6 2.37 2.6 2.6 0 0 0-.03.42c0 2.15 2.5 3.9 5.6 3.9 3.09 0 5.6-1.75 5.6-3.9 0-.14-.01-.28-.03-.42.5-.26.84-.77.84-1.35zM6.67 11.03a1.03 1.03 0 1 1 2.06 0 1.03 1.03 0 0 1-2.06 0zm5.75 2.72c-.7.7-2.05.76-2.44.76-.4 0-1.74-.05-2.44-.76a.27.27 0 0 1 .38-.38c.44.44 1.4.6 2.06.6.67 0 1.62-.16 2.07-.6a.27.27 0 1 1 .38.38zm-.18-1.7a1.03 1.03 0 1 1 0-2.06 1.03 1.03 0 0 1 0 2.06z"/></svg></span></h1>
+      <p class="lead">On lit des milliers d'avis d'utilisateurs Reddit et on les résume en une note claire, catégorie par catégorie. Vous achetez le bon produit, sans y passer la soirée.</p>
+      <p class="lead-update">Mis à jour chaque semaine.</p>
+    </section>
 
     <h2>Liens utiles</h2>
     <p class="link-list">
