@@ -1,11 +1,17 @@
+<p align="center">
+  <a href="https://meilleurdumeilleur.fr/">
+    <img src="assets/readme-hero.svg" alt="Meilleur du Meilleur - le meilleur du meilleur, selon Reddit" width="100%">
+  </a>
+</p>
+
 # Meilleur du Meilleur
 
 Meilleur du Meilleur est un comparateur de produits français basé sur les avis
 Reddit agrégés.
 
-Le site transforme les discussions publiques d'utilisateurs en classements
-clairs, notes de consensus, points forts, points faibles et guides d'achat pour
-les consommateurs en France.
+On lit des milliers d'avis d'utilisateurs Reddit et on les résume en une note
+claire, catégorie par catégorie. Vous achetez le bon produit, sans y passer la
+soirée.
 
 ## Liens
 
