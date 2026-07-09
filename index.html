@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meilleur du Meilleur - Comparateur de produits basé sur les avis Reddit</title>
+  <meta name="description" content="Meilleur du Meilleur compare les produits à partir d'avis Reddit agrégés pour aider les consommateurs à choisir le meilleur modèle avant d'acheter.">
+  <meta property="og:title" content="Meilleur du Meilleur">
+  <meta property="og:description" content="Comparateur de produits basé sur les avis Reddit, avec classements, notes de consensus et guides d'achat.">
+  <meta property="og:url" content="https://itssampe.github.io/meilleurdumeilleur/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #161a1d;
+      --muted: #5f6b76;
+      --line: #d9e0e7;
+      --accent: #0b6bcb;
+      --bg: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(920px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 7vw, 5.25rem);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      font-size: 1.35rem;
+    }
+
+    p {
+      max-width: 680px;
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .lead {
+      color: var(--ink);
+      font-size: clamp(1.25rem, 3vw, 1.65rem);
+      max-width: 760px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 32px 0 0;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 10px 16px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .item {
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+
+    .item strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 28px, 920px);
+        padding: 48px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Meilleur du Meilleur</h1>
+    <p class="lead">Le comparateur de produits basé sur les avis Reddit.</p>
+    <p>Meilleur du Meilleur analyse les discussions publiques d'utilisateurs Reddit pour produire des classements, des notes de consensus et des guides d'achat clairs pour les consommateurs français.</p>
+    <div class="actions">
+      <a class="button" href="https://meilleurdumeilleur.fr/">Visiter le site</a>
+      <a class="button secondary" href="https://meilleurdumeilleur.fr/methodologie/">Voir la méthodologie</a>
+    </div>
+
+    <h2>Ce que le site apporte</h2>
+    <div class="grid" aria-label="Points forts">
+      <div class="item">
+        <strong>Classements produits</strong>
+        <p>Des catégories classées selon le consensus des retours utilisateurs, pas selon le marketing des marques.</p>
+      </div>
+      <div class="item">
+        <strong>Avis Reddit agrégés</strong>
+        <p>Les tendances récurrentes sont synthétisées en points forts, points faibles et FAQ utiles.</p>
+      </div>
+      <div class="item">
+        <strong>Guides d'achat français</strong>
+        <p>Les recommandations privilégient les modèles réellement disponibles pour les acheteurs en France.</p>
+      </div>
+    </div>
+
+    <h2>Liens utiles</h2>
+    <p>
+      Site officiel :
+      <a href="https://meilleurdumeilleur.fr/">https://meilleurdumeilleur.fr/</a>
+    </p>
+    <p>
+      Contact :
+      <a href="mailto:bonjour@meilleurdumeilleur.fr">bonjour@meilleurdumeilleur.fr</a>
+    </p>
+
+    <footer>
+      Created by Lucas Sampé.
+    </footer>
+  </main>
+</body>
+</html>
